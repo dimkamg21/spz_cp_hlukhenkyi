@@ -1,34 +1,25 @@
-# Програмне забезпечення для моніторингу мережі (spz_cp_hlukhenkyi)
+# Network Monitoring Software
 
-Цей репозиторій містить програмне забезпечення для моніторингу мережі, що дозволяє відслідковувати стан мережевих пристроїв та з'єднань.
+This project is developed to provide functionality for monitoring and managing network devices. It includes various features such as checking the availability of devices, monitoring network connection speeds, and notifying about network events.
 
-**Перевірка доступності мережевих пристроїв:**
-Реалізація функції для перевірки доступності мережевих пристроїв та відображення їх статусу.
+## Feature Overview
 
-**Моніторинг швидкості мережевих з'єднань:**
-Створення можливості відслідковування швидкості передачі даних на мережевих з'єднаннях.
+- **Network Device Availability Check**: This feature allows checking the availability of network devices and displaying their current status.
 
-**Сповіщення про втрату з'єднання:**
-Розробка функції для автоматичного сповіщення про втрату з'єднання з конкретним мережевим пристроєм.
+- **Network Connection Speed Monitoring**: Capability to track data transmission speeds on network connections and analyze their changes.
 
-**Збір та аналіз журналів подій:**
-Реалізація інструменту для збору та аналізу журналів подій мережевих пристроїв.
+- **Connection Loss Notification**: Automatic notification about connection loss with specific network devices.
 
-**Сповіщення про стан мережі:**
-Реалізація можливості надсилання повідомлень про стан мережі та пристроїв.
+- **Event Log Collection and Analysis**: Tool for collecting and analyzing event logs of network devices to detect problems and anomalies.
 
-**Моніторинг використання мережевого трафіку:**
-Розробка функціоналу для моніторингу та аналізу використання мережевого трафіку.
+- **Network Status Notification**: Ability to send messages about the network and device status for prompt issue resolution.
 
-**Пошук та ідентифікація нових пристроїв:**
-Можливість автоматичного пошуку та ідентифікації нових мережевих пристроїв.
+- **Network Traffic Usage Monitoring**: Functionality for monitoring and analyzing network traffic usage to optimize network operation.
 
-**Налаштування сповіщень для конкретних подій:**
-Розробка системи налаштування сповіщень для конкретних подій або станів мережевих пристроїв.
+- **Device Discovery and Identification**: Automatic discovery and identification of new network devices for connection and control.
 
-**Інтерактивне відслідковування змін в стані мережі:**
-Створення інтерактивного інтерфейсу для відслідковування змін в стані мережі в режимі реального часу.
+- **Custom Event Notification Settings**: System for configuring notifications for specific network events or device states for personalized control.
 
-**Інформація про пристрої:**
-Виведення основної інформації про кожен мережевий пристрій, таку як IP-адреса, статус та інші ключові параметри.
+- **Interactive Network State Tracking**: Creation of an interactive interface for tracking changes in the network state in real-time for prompt response.
 
+- **Device Information**: Display of basic information about each network device, such as IP address, status, and other key parameters for convenient management.
