@@ -23,4 +23,3 @@ This project is developed to provide functionality for monitoring and managing n
 - **Interactive Network State Tracking**: Creation of an interactive interface for tracking changes in the network state in real-time for prompt response.
 
 - **Device Information**: Display of basic information about each network device, such as IP address, status, and other key parameters for convenient management.
-
