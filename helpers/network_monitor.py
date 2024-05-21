@@ -1,9 +1,30 @@
 import netifaces
+import subprocess
 
 class NetworkMonitor:
     def __init__(self, root, network_gui=None):
         self.root = root
         self.network_gui = network_gui
+
+    def get_dns_servers(self):
+        dns_servers = []
+        try:
+            result = subprocess.check_output("ipconfig /all", shell=True).decode()
+            for line in result.splitlines():
+                if "DNS Servers" in line:
+                    dns_servers.append(line.split(":")[1].strip())
+        except Exception as e:
+            self.logger.log_info(f"Error retrieving DNS servers: {e}")
+        return dns_servers
+
+    def is_dhcp_enabled(self, interface):
+        try:
+            result = subprocess.check_output(f"netsh interface ip show config name=\"{interface}\"", shell=True).decode()
+            if "DHCP enabled: Yes" in result:
+                return True
+        except subprocess.CalledProcessError as e:
+            self.logger.log_info(f"Error checking DHCP: {e}")
+        return False
 
     def get_network_info(self):
         interfaces = netifaces.interfaces()
